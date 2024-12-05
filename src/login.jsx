@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-  const [correo, setEmail] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ function Login() {
             <input
               type="email"
               id="email"
-              value={correo}
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="e.g. jane.doe@example.com"
               required
