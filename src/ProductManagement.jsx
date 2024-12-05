@@ -1,4 +1,4 @@
-import e from "cors";
+
 import React, { useEffect, useState } from "react";
 
 function ProductManagement() {
